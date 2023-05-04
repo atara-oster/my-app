@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>weather page</h1>
+   
+     
+    <table class="table table-bordered">
+      <tr>
+        <th>תאריך</th>
+        <th>טמפ ממוצעת</th>
+        <th>מהירות הרוח</th>
+      </tr>
+      <tr *ngFor="let weather of weatherData.forecast.forecastday">
+        <td>{{ weather.date }}</td>
+        <td>{{ weather.day.avgtemp_c }}</td>
+        <td>{{ weather.day.avgvis_km }}</td>
+      </tr>
+    </table>
+  </div>
